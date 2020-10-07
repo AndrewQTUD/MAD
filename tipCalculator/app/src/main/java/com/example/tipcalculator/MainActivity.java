@@ -40,9 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 int displayTotal = Integer.parseInt(getTotal);
                 int displayTip = Integer.parseInt(getTip);
 
-                int i = (displayTotal * displayTip) / 100;
+                float i = (displayTotal * displayTip) / 100;
 
-                total.setText(i);
+                float ii = i + displayTotal;
+
+                total.setText("Total tip amount : " +String.valueOf(i));
+                Tiptotal.setText("Total amount : " + String.valueOf(ii));
 
 
             }
